@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:wght@400;700&family=Noto+Sans:wght@700&family=Playfair+Display:wght@500&display=swap');
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(192, 188, 188);
+    overflow-anchor: none;
+}
+a{
+    text-decoration: none;
+}
+.content{
+    padding-top: 90px;
+}
+.filters-price__inputs{
+    margin-bottom: 15px;
+}
+
+.product{
+    /* width: 285px; */
+    border: 1px solid rgb(61, 59, 59);
+    border-radius: 5px;
+    background-color: rgb(10, 9, 9);
+    padding: 20px;
+    padding-top: 9px;
+}
+.product__image{
+    display: block;
+    height: 162px;
+    overflow: hidden;
+}
+.product__rating{
+    display: inline-flex;
+    align-items: center;
+}
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #4661f6;
+    background-color: chartreuse;
+  }
+  
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+  }
+.product__rating  svg{
+    margin-right: 8px;
+    
+    
+}
+.product__rating h5{
+   
+}
+.product-title a{
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: rgb(238, 238, 245);
+}
+.product__test{
+    margin-right: 6px ;
+    margin-top: -8px;
+    font-size: 14px;
+}
+.product__props{
+    color: rgb(238, 238, 245);
+    align-items: center;
+    margin-bottom: 20px;
+}
+.product__info{
+ font-size: 14px;
+ color: rgb(238, 238, 245);
+ margin-bottom: 10px;
+}
+.product__term{
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(238, 238, 245);
+}
+.product__available{
+    display: block;
+    color: rgb(238, 238, 245);
+}
+.product__price{
+    display: flex;
+    align-items: center;
+}
+.product-price__current{
+    margin-right: 16px;
+font-size: 28px;
+line-height: 28px;
+font-weight: 800;
+color: rgb(112, 109, 109);
+}
+.product-price__old{
+    font-size: 19px;
+    line-height: 28px;
+    color: rgb(53, 50, 50);
+    margin-top: 4px;
+    text-decoration: line-through;
+    }
+.product__btn{
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(223, 220, 68);
+    color: rgb(243, 234, 234);
+    text-shadow:  1px 1px 1px#0d0d0e;
+    border-radius: 5px;
+    padding: 14px 0;
+    margin-top: 8px;
+    transition: background-color 0.3s ease-in-out;
+}    
+.product__btn:hover{
+    background-color: rgba(223, 220, 68, 0.6);
+    transition: background-color 0.3s ease-in-out;
+}
+.container{
+    width: 1234px;
+    padding: 0 15px ;
+    margin: 0 auto;
+}
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat( 4, 1fr);
+    
+}
+.product-grid{
+    grid-column: 3 span;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat( 3, 1fr);
+}
+.btn-more{
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+   cursor: pointer;
+    text-align:center ;
+    border: none;
+    color: rgb(61, 59, 59);
+    background-color: #fff;
+    transition: background-color 0.3s ease-in;
+}
+.btn-more img{
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: top;
+    width: 17px;
+    height: 17px;
+}
+.btn-more:hover{
+    background-color: rgb(228, 222, 222);
+}
+/* Widg */
+.widget + .widget {
+margin-top: 30px;
+ }
+.widget__title {
+    font-weight: bold;
+    line-height: 1.2;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 20px;
+ }
+
+.widget__title::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+   
+    top: 0;
+    right: 0;
+    background-image: url('../img/arrow.png');
+    background-repeat: no-repeat;
+    background-size: initial;
+} 
+.widget__body { }
+.location-row {
+    display: flex;
+ }
+ .location-row:first-child{
+     border-radius: 4px 0 0 4px;
+    border: 1px solid seashell;
+
+ }
+ .location-row:last-child{
+     overflow: hidden;
+    border-radius:  0px 4px  4px 0px;
+    border: 1px solid seashell;
+    border-top: none;
+    flex-wrap: 1;
+ } 
+.location__btn {
+    border: none ;
+    background-color:transparent;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center ;
+    padding: 0 15px;
+    height: 50px;
+    
+ }
+ .location__checkbox + .location__btn{
+    background-color: rgb(223, 220, 68);
+ }
+.location__checkbox + .location__btn:hover{
+    background-color: rgb(223, 220, 68);
+}
+.location__checkbox{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+/* Radio */
+.radio{
+    
+}
+.radio__group {
+    display: block;
+    cursor: pointer;
+ }
+.radio__group + .radio__group{
+    margin-top: 15px;
+} 
+.radio-real { 
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+.radio-real:checked + .radio__fake{
+background-color: rgb(225, 228, 36);
+}
+.radio-real:checked + .radio__fake::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: rgb(36, 35, 35);
+    transform: translate(-50%, -50%);
+
+}
+.radio__fake {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    margin-right: 10px;
+    height: 20px;
+    background-color: rgb(247, 246, 234);
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 50%;
+    vertical-align: bottom;
+ }
+.radio__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+ }
+ .checkbox { 
+     cursor: pointer;
+     display: block;
+ }
+ .checkbox + .checkbox {
+    margin-top: 15px; 
+ }
+ .checkbox__real{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+.checkbox__fake { 
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    margin-right: 10px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 2px;
+    vertical-align: bottom;
+}
+.checkbox__real:checked + .checkbox__fake{
+    background-color: rgb(225, 228, 36);
+}
+.checkbox__real:checked + .checkbox__fake::before{
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    background-image: url('../img/30.png');
+    background-position: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.checkbox__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+ }

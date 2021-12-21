@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link href="./simplebar.css" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Каталог</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Акції</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Оплата і доставка</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Новинки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакти</a>
+          </li>
+        </ul>
+        <div class="header__card card " tabindex="0">
+            <div class="card__text">корзина
+                <span class="card__quantity">0</span>
+            </div>
+            <div class="card-content">
+                <ul class="card-content__list" >
+                  
+                </ul>
+                <div class="card-content__bottom">
+                    <div class="card-content__fullprice">
+                        <span > Итого:</span>
+                        <span class="fullprice">1525</span>
+                    </div>
+                    <button class="product__btn2 btn">перейти в кошик</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+      </div>
+    </header>
+    <main class="content ">
+      <div class="container">
+        <div class="products-content grid-container">
+          <div class="filters">
+            <div class="filters__item filters-price">
+              <div class="filters-price__title">Ціна</div>
+              <div class="filters-price__slider"></div>
+              <div class="filters-price__inputs">
+                <input type="text" class="filters-price__input" />
+                <input type="text" class="filters-price__input" />
+              </div>
+            </div>
+            <!-- Widget -->
+            <div class="widget">
+              <div class="widget__title">
+                Ціновий діапазон
+              </div>
+              <div class="widget__body">
+                <div class="location-group">
+                  <div class="location-row">
+                    <input type="checkbox" id = 'location-01' checked class="location__checkbox">
+                    <label class="location__btn" for="location-01">&lt; 100</label>
+
+                    <input type="checkbox" id = 'location-02' checked class="location__checkbox">
+                    <label class="location__btn" for="location-02">100-1000</label>
+
+                    <input type="checkbox" id = 'location-03'class="location__checkbox">
+                    <label class="location__btn" for="location-03">1000-2000</label>
+
+                    <input type="checkbox" id = 'location-04'class="location__checkbox">                             
+                    <label class="location__btn" for="location-04">2000</label>
+                  </div>
+                  <div class="location-row">
+                    <input type="checkbox" id = 'location-05'>
+                    <label class="location__btn" for="location-05" class="location__checkbox"> будь-яка</label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+            <!--  -->
+            <div class="widget">
+              <div class="widget__title">               
+                Доставка
+              </div>
+              <div class="widget__body">
+          
+                <label class="radio__group">
+                  <input type="radio" class="radio-real" checked>
+                  <span class="radio__fake"></span>
+                  <span class="radio__title">Будь-яка</span>
+                </label>
+
+                <label class="radio__group">
+                  <input type="radio" class="radio-real">
+                  <span class="radio__fake"></span>
+                  <span class="radio__title">Наложний платіж</span>
+                </label>
+                <label class="radio__group">
+                  <input type="radio" class="radio-real">
+                  <span class="radio__fake"></span>
+                  <span class="radio__title">Самовивіз</span>
+                </label>
+                <label class="radio__group">
+                  <input type="radio" class="radio-real">
+                  <span class="radio__fake"></span>
+                  <span class="radio__title">Повна плата</span>
+                </label>
+          
+                </div>
+          
+              </div>
+              <div class="widget">
+                <div class="widget__title">               
+                  Сезон
+                </div>
+                <div class="widget__body">
+            
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__real" checked>
+                    <span class="checkbox__fake"></span>
+                    <span class="checkbox__title">Весна</span>
+                  </label>
+
+                  
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__real" >
+                    <span class="checkbox__fake"></span>
+                    <span class="checkbox__title">Зима</span>
+                  </label>
+
+                  
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__real">
+                    <span class="checkbox__fake"></span>
+                    <span class="checkbox__title">Демі</span>
+                  </label>
+
+                  
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__real" >
+                    <span class="checkbox__fake"></span>
+                    <span class="checkbox__title">Літо</span>
+                  </label>
+  
+                 
+                  </div>
+            
+                </div>
+          </div>
+          <ul class="product-grid">
+            <li class="product-grid__item">
+              <article class="product">
+                <div class="product__image">
+                  <div class="image-item">
+                    <img src="./img/kurtka2.jpg" alt="" />
+                  </div>
+                </div>
+                <h3 class="product-title">
+                  <a href="#">Куртка жіноча (навопнювач пух)</a>
+                </h3>
+                <div class="product__props">
+                  <span class="product__rating">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        fill="none"
+                        d="M16.85,7.275l-3.967-0.577l-1.773-3.593c-0.208-0.423-0.639-0.69-1.11-0.69s-0.902,0.267-1.11,0.69L7.116,6.699L3.148,7.275c-0.466,0.068-0.854,0.394-1,0.842c-0.145,0.448-0.023,0.941,0.314,1.27l2.871,2.799l-0.677,3.951c-0.08,0.464,0.112,0.934,0.493,1.211c0.217,0.156,0.472,0.236,0.728,0.236c0.197,0,0.396-0.048,0.577-0.143l3.547-1.864l3.548,1.864c0.18,0.095,0.381,0.143,0.576,0.143c0.256,0,0.512-0.08,0.729-0.236c0.381-0.277,0.572-0.747,0.492-1.211l-0.678-3.951l2.871-2.799c0.338-0.329,0.459-0.821,0.314-1.27C17.705,7.669,17.316,7.343,16.85,7.275z M13.336,11.754l0.787,4.591l-4.124-2.167l-4.124,2.167l0.788-4.591L3.326,8.5l4.612-0.67l2.062-4.177l2.062,4.177l4.613,0.67L13.336,11.754z"
+                      ></path>
+                    </svg>
+                    <h5>4.6</h5>
+                  </span>
+                  <h5 class="product__test">60 відгуків</h5>
+                </div>
+                <div class="product__info">
+                  <span class="product__term">Артикул: 85245</span>
+                  <span class="product__available">В наявності 4 шт</span>
+                </div>
+                <div class="product__price">
+                  <span class="product-price__current">950 <span>грн</span></span>
+                  <span class="product-price__old">1250 грн</span>
+                </div>
+                <button class="product__btn">Добавить до кошика</button>
+              </article>
+            </li>
+            <li class="product-grid__item">
+              <article class="product">
+                <div class="product__image">
+                  <div class="image-item">
+                    <img src="./img/kurtka2.jpg" alt="" />
+                  </div>
+                </div>
+                <h3 class="product-title">
+                  <a href="#">Куртка жіноча (навопнювач пух)</a>
+                </h3>
+                <div class="product__props">
+                  <span class="product__rating">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        fill="none"
+                        d="M16.85,7.275l-3.967-0.577l-1.773-3.593c-0.208-0.423-0.639-0.69-1.11-0.69s-0.902,0.267-1.11,0.69L7.116,6.699L3.148,7.275c-0.466,0.068-0.854,0.394-1,0.842c-0.145,0.448-0.023,0.941,0.314,1.27l2.871,2.799l-0.677,3.951c-0.08,0.464,0.112,0.934,0.493,1.211c0.217,0.156,0.472,0.236,0.728,0.236c0.197,0,0.396-0.048,0.577-0.143l3.547-1.864l3.548,1.864c0.18,0.095,0.381,0.143,0.576,0.143c0.256,0,0.512-0.08,0.729-0.236c0.381-0.277,0.572-0.747,0.492-1.211l-0.678-3.951l2.871-2.799c0.338-0.329,0.459-0.821,0.314-1.27C17.705,7.669,17.316,7.343,16.85,7.275z M13.336,11.754l0.787,4.591l-4.124-2.167l-4.124,2.167l0.788-4.591L3.326,8.5l4.612-0.67l2.062-4.177l2.062,4.177l4.613,0.67L13.336,11.754z"
+                      ></path>
+                    </svg>
+                    <h5>4.6</h5>
+                  </span>
+                  <h5 class="product__test">60 відгуків</h5>
+                </div>
+                <div class="product__info">
+                  <span class="product__term">Артикул: 85245</span>
+                  <span class="product__available">В наявності 4 шт</span>
+                </div>
+                <div class="product__price">
+                  <span class="product-price__current">950 грн</span>
+                  <span class="product-price__old">1250 грн</span>
+                </div>
+                <button class="product__btn">Добавить до кошика</button>
+              </article>
+            </li>
+            <li class="product-grid__item">
+              <article class="product">
+                <div class="product__image">
+                  <div class="image-item">
+                    <img src="./img/kurtka2.jpg" alt="" />
+                  </div>
+                </div>
+                <h3 class="product-title">
+                  <a href="#">Куртка жіноча (навопнювач пух)</a>
+                </h3>
+                <div class="product__props">
+                  <span class="product__rating">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        fill="none"
+                        d="M16.85,7.275l-3.967-0.577l-1.773-3.593c-0.208-0.423-0.639-0.69-1.11-0.69s-0.902,0.267-1.11,0.69L7.116,6.699L3.148,7.275c-0.466,0.068-0.854,0.394-1,0.842c-0.145,0.448-0.023,0.941,0.314,1.27l2.871,2.799l-0.677,3.951c-0.08,0.464,0.112,0.934,0.493,1.211c0.217,0.156,0.472,0.236,0.728,0.236c0.197,0,0.396-0.048,0.577-0.143l3.547-1.864l3.548,1.864c0.18,0.095,0.381,0.143,0.576,0.143c0.256,0,0.512-0.08,0.729-0.236c0.381-0.277,0.572-0.747,0.492-1.211l-0.678-3.951l2.871-2.799c0.338-0.329,0.459-0.821,0.314-1.27C17.705,7.669,17.316,7.343,16.85,7.275z M13.336,11.754l0.787,4.591l-4.124-2.167l-4.124,2.167l0.788-4.591L3.326,8.5l4.612-0.67l2.062-4.177l2.062,4.177l4.613,0.67L13.336,11.754z"
+                      ></path>
+                    </svg>
+                    <h5>4.6</h5>
+                  </span>
+                  <h5 class="product__test">60 відгуків</h5>
+                </div>
+                <div class="product__info">
+                  <span class="product__term">Артикул: 85245</span>
+                  <span class="product__available">В наявності 4 шт</span>
+                </div>
+                <div class="product__price">
+                  <span class="product-price__current">950 грн</span>
+                  <span class="product-price__old">1250 грн</span>
+                </div>
+                <button class="product__btn">Добавить до кошика</button>
+              </article>
+            </li>
+            <li class="product-grid__item">
+              <article class="product">
+                <div class="product__image">
+                  <div class="image-item">
+                    <img src="./img/kurtka2.jpg" alt="" />
+                  </div>
+                </div>
+                <h3 class="product-title">
+                  <a href="#">Куртка жіноча (навопнювач пух)</a>
+                </h3>
+                <div class="product__props">
+                  <span class="product__rating">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        fill="none"
+                        d="M16.85,7.275l-3.967-0.577l-1.773-3.593c-0.208-0.423-0.639-0.69-1.11-0.69s-0.902,0.267-1.11,0.69L7.116,6.699L3.148,7.275c-0.466,0.068-0.854,0.394-1,0.842c-0.145,0.448-0.023,0.941,0.314,1.27l2.871,2.799l-0.677,3.951c-0.08,0.464,0.112,0.934,0.493,1.211c0.217,0.156,0.472,0.236,0.728,0.236c0.197,0,0.396-0.048,0.577-0.143l3.547-1.864l3.548,1.864c0.18,0.095,0.381,0.143,0.576,0.143c0.256,0,0.512-0.08,0.729-0.236c0.381-0.277,0.572-0.747,0.492-1.211l-0.678-3.951l2.871-2.799c0.338-0.329,0.459-0.821,0.314-1.27C17.705,7.669,17.316,7.343,16.85,7.275z M13.336,11.754l0.787,4.591l-4.124-2.167l-4.124,2.167l0.788-4.591L3.326,8.5l4.612-0.67l2.062-4.177l2.062,4.177l4.613,0.67L13.336,11.754z"
+                      ></path>
+                    </svg>
+                    <h5>4.6</h5>
+                  </span>
+                  <h5 class="product__test">60 відгуків</h5>
+                </div>
+                <div class="product__info">
+                  <span class="product__term">Артикул: 85245</span>
+                  <span class="product__available">В наявності 4 шт</span>
+                </div>
+                <div class="product__price">
+                  <span class="product-price__current">950 грн</span>
+                  <span class="product-price__old">1250 грн</span>
+                </div>
+                <button class="product__btn">Добавить до кошика</button>
+              </article>
+            </li>
+            <li class="product-grid__item">
+              <article class="product">
+                <div class="product__image">
+                  <div class="image-item">
+                    <img src="./img/kurtka2.jpg" alt="" />
+                  </div>
+                </div>
+                <h3 class="product-title">
+                  <a href="#">Куртка жіноча (навопнювач пух)</a>
+                </h3>
+                <div class="product__props">
+                  <span class="product__rating">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        fill="none"
+                        d="M16.85,7.275l-3.967-0.577l-1.773-3.593c-0.208-0.423-0.639-0.69-1.11-0.69s-0.902,0.267-1.11,0.69L7.116,6.699L3.148,7.275c-0.466,0.068-0.854,0.394-1,0.842c-0.145,0.448-0.023,0.941,0.314,1.27l2.871,2.799l-0.677,3.951c-0.08,0.464,0.112,0.934,0.493,1.211c0.217,0.156,0.472,0.236,0.728,0.236c0.197,0,0.396-0.048,0.577-0.143l3.547-1.864l3.548,1.864c0.18,0.095,0.381,0.143,0.576,0.143c0.256,0,0.512-0.08,0.729-0.236c0.381-0.277,0.572-0.747,0.492-1.211l-0.678-3.951l2.871-2.799c0.338-0.329,0.459-0.821,0.314-1.27C17.705,7.669,17.316,7.343,16.85,7.275z M13.336,11.754l0.787,4.591l-4.124-2.167l-4.124,2.167l0.788-4.591L3.326,8.5l4.612-0.67l2.062-4.177l2.062,4.177l4.613,0.67L13.336,11.754z"
+                      ></path>
+                    </svg>
+                    <h5>4.6</h5>
+                  </span>
+                  <h5 class="product__test">60 відгуків</h5>
+                </div>
+                <div class="product__info">
+                  <span class="product__term">Артикул: 85245</span>
+                  <span class="product__available">В наявності 4 шт</span>
+                </div>
+                <div class="product__price">
+                  <span class="product-price__current">950 грн</span>
+                  <span class="product-price__old">1250 грн</span>
+                </div>
+                <button class="product__btn">Добавить до кошика</button>
+              </article>
+            </li>
+            <li class="product-grid__item">
+              <article class="product">
+                <div class="product__image">
+                  <div class="image-item">
+                    <img src="./img/kurtka2.jpg" alt="" />
+                  </div>
+                </div>
+                <h3 class="product-title">
+                  <a href="#">Куртка жіноча (навопнювач пух)</a>
+                </h3>
+                <div class="product__props">
+                  <span class="product__rating">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        fill="none"
+                        d="M16.85,7.275l-3.967-0.577l-1.773-3.593c-0.208-0.423-0.639-0.69-1.11-0.69s-0.902,0.267-1.11,0.69L7.116,6.699L3.148,7.275c-0.466,0.068-0.854,0.394-1,0.842c-0.145,0.448-0.023,0.941,0.314,1.27l2.871,2.799l-0.677,3.951c-0.08,0.464,0.112,0.934,0.493,1.211c0.217,0.156,0.472,0.236,0.728,0.236c0.197,0,0.396-0.048,0.577-0.143l3.547-1.864l3.548,1.864c0.18,0.095,0.381,0.143,0.576,0.143c0.256,0,0.512-0.08,0.729-0.236c0.381-0.277,0.572-0.747,0.492-1.211l-0.678-3.951l2.871-2.799c0.338-0.329,0.459-0.821,0.314-1.27C17.705,7.669,17.316,7.343,16.85,7.275z M13.336,11.754l0.787,4.591l-4.124-2.167l-4.124,2.167l0.788-4.591L3.326,8.5l4.612-0.67l2.062-4.177l2.062,4.177l4.613,0.67L13.336,11.754z"
+                      ></path>
+                    </svg>
+                    <h5>4.6</h5>
+                  </span>
+                  <h5 class="product__test">60 відгуків</h5>
+                </div>
+                <div class="product__info">
+                  <span class="product__term">Артикул: 85245</span>
+                  <span class="product__available">В наявності 4 шт</span>
+                </div>
+                <div class="product__price">
+                  <span class="product-price__current">950 грн</span>
+                  <span class="product-price__old">1250 грн</span>
+                </div>
+                <button class="product__btn">Добавить до кошика</button>
+              </article>
+            </li>
+            <button class="btn-more">
+              <img src=".//img/plus.svg" alt="Show more">
+              показать ще
+            </button>
+          </ul>
+          
+        </div>
+        
+      </div>
+      
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="./simplebar.min.js"></script>
+  </body>
+</html>
+
+
+<!-- <li class="card-content__item">
+  <article class="card-content__product card-product">
+      <img src="./kurtka2.jpg" alt="" class='card-product__img'>
+      <div class="card-product__text">
+          <h3 class="card-product__title">Куртка жіноча (наповнювач пух)</h3>
+      <span class="card-product__price">950 грн</span>
+      </div>
+      <button class="card-product__delete"></button>
+  </article>
+</li>                  -->
+  <!-- Widget -->
+ 
+  
+  <!--  -->

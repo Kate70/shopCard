@@ -1,0 +1,166 @@
+@import '../simplebar.css';
+ul li{
+    list-style-type:none;
+}
+header{
+    position: relative;
+    z-index: 100;
+    background-color: rgb(248, 246, 246);
+    box-shadow: 0px 4px 4px  rgb(94, 92, 92);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.card-content{
+    position: absolute;
+    cursor: default;
+    width: 490px;
+    right: 0;
+    top: 100%;
+    background-color: rgb(185, 180, 180);
+    box-shadow:0px 4px 4px  rgb(94, 92, 92); ;
+    opacity: 0;
+    visibility: hidden;
+    transition: opaopacity 0.3s, visibility 0.3s;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+}
+.nav__item:not(:last-child){
+    margin-right: 50px;
+}
+.nav__link{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 19px;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(85, 81, 81);
+    list-style-type:none
+}
+.card{
+    position: relative;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+.card.active:hover{
+    cursor: pointer;
+    background-color:rgba(129, 129, 129, 0.6)
+}
+.card.active:hover .card-content{
+opacity: 1;
+visibility: visible;
+transition: opaopacity 0.3s, visibility 0.3s;}
+.card__quantity{
+    position: absolute;
+    right: -12px;
+    color: blanchedalmond;
+    top: 50%;
+    transform: translate(-50%) ;
+    background-color: rgb(143, 77, 77);
+    border-radius: 100%;
+    padding: 2px;
+    min-height: 16px;
+    min-width: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+.header__card{
+    margin-left: 35px;
+}
+.none{
+    display: none;
+}
+.card-content__list{
+    
+    max-height: 330px;
+}
+.card-product{
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    transition: background-color 0.3s;
+}
+.card-product:hover{
+    background-color: rgba(117, 115, 115, 0.5)
+}
+.card-product__img{
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: cover;
+    margin-right: 18px;
+}
+.card-product__title{
+    max-width: 280px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.card-product__price{
+    font-weight: bold;
+    line-height: 23px;
+    font-size: 23px;
+
+}
+.card-product__delete{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../img/trash.svg');
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+}
+.card-content__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+.product__btn2{
+    border: none;
+    width: 240px;
+    cursor: pointer;
+    background-color: rgb(223, 220, 68);
+    color: rgb(243, 234, 234);
+    border-radius: 5px;
+    padding: 14px 0;
+    margin-top: 8px;
+    transition: background-color 0.3s ease-in-out;
+}  
+.product__btn:disabled{
+    opacity: 0.5;
+    pointer-events: none;
+} 
+.product__btn:hover{
+    background-color: rgba(223, 220, 68, 0.6);
+    transition: background-color 0.3s ease-in-out;
+}
+.card-content__fullprice{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 15px;
+}
+.fullprice{
+    line-height: 23px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 9px;
+}
+.simplebar-track .simplebar-vertical{
+    width: 4px;
+    background-color: rgba(87, 85, 85 0.9);
+    border-radius: 5px;
+    margin-top: 18px;
+    right: 6px;
+}
